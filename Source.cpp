@@ -12,6 +12,7 @@ class Character
 	int health;
 	int damage;
 	int c;
+	int a;
 public:
 	
 };
