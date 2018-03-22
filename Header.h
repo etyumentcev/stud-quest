@@ -7,6 +7,26 @@
 
 using namespace std;
 
+class BasisDraw
+{
+public:
+	virtual void Draw() = 0;
+};
+
+class Field : public BasisDraw
+{
+	BasisDraw* background;
+public:
+	Field()
+	{
+		Draw();
+	}
+
+	virtual void Draw()
+	{
+	}
+};
+
 
 class Character
 {
