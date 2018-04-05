@@ -5,8 +5,9 @@
 
 
 void main()
-{	
-	
-
+{
+	setlocale(LC_ALL, "ru");
+	Field f = new (Background);
+	f.Draw();
 	system("pause");
 }

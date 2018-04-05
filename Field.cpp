@@ -1,16 +1,16 @@
-//#include "BasisDraw.h"
+#include "BasisDraw.h"
 #include "Field.h"
 
 
-Field::Field(BasisDraw* back)
+Field::Field(BasisDraw* back/*, vector<BasisDraw*>const& pages*/):background(back)
 {
 
-	back = new Background;
-	background = back;
+	
 	
 }
 
 void Field :: Draw()
 {
 	background->Draw();
+	//pages[current]->Draw();	
 }
