@@ -1,16 +1,28 @@
-//#include "BasisDraw.h"
+#include "BasisDraw.h"
 #include "Field.h"
 
 
-Field::Field(BasisDraw* back)
+Field::Field(BasisDraw* _background, vector<BasisDraw*> _pages):background(_background), pages(_pages)
 {
+	current = 0;
 
-	back = new Background;
-	background = back;
 	
 }
 
 void Field :: Draw()
 {
-	background->Draw();
+	//background->Draw();
+
+	//for (current; current < pages.size; ++current)
+	//{
+	//	pages[current]->Draw();
+	//}
+
+	//for (vector<BasisDraw*>::iterator it=pages.begin(); it != pages.end(); ++it)
+	//{
+		
+		pages[current]->Draw();
+		current = choose;
+	//}
+	
 }
