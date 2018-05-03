@@ -1,5 +1,5 @@
-#ifndef _ELEMENT_H_
-#define _ELEMENT_H_
+#ifndef _BASISDRAW_H_
+#define _BASISDRAW_H_
 
 class BasisDraw
 {

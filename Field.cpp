@@ -4,7 +4,7 @@
 
 Field::Field(BasisDraw* _background, vector<BasisDraw*> _pages):background(_background), pages(_pages)
 {
-	current = 0;
+	pageID = 0;
 
 	
 }
@@ -21,8 +21,13 @@ void Field :: Draw()
 	//for (vector<BasisDraw*>::iterator it=pages.begin(); it != pages.end(); ++it)
 	//{
 		
-		pages[current]->Draw();
-		current = choose;
+		pages[pageID]->Draw();
+		
 	//}
 	
+}
+
+void Field::Current(int pnumb)
+{
+
 }

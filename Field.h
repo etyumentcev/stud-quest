@@ -12,7 +12,7 @@ class Field : public BasisDraw
 
 	vector<BasisDraw*>pages;
 
-	int current;
+	int pageID;
 	string Name;
 	int choose;
 	
@@ -23,6 +23,7 @@ public:
 	Field(BasisDraw* background,vector<BasisDraw*> pages);
 
 	virtual void Draw();
+	void Current(int pnumb);
 	
 };
 

@@ -3,8 +3,9 @@
 
 void Background::Draw()
 {
-	char arr[200][150];
-	int x = 200, y = 150;
+
+	char arr[50][25];
+	int x = 50, y = 25;
 
 	for (int i = 0; i <= x - 1; i = i++)
 	{
