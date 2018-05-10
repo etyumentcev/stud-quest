@@ -24,6 +24,7 @@ public:
 
 	virtual void Draw();
 	void Current(int pnumb);
+	int Current();
 	
 };
 

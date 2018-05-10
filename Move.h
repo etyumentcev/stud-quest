@@ -12,7 +12,7 @@ class Move:public Handler
 	Field* field;
 
 public:
-	void operator () ();
+	virtual void operator () ();
 };
 
 #endif

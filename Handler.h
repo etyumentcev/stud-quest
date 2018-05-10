@@ -4,7 +4,7 @@
 class Handler
 {
 public:
-	virtual void Draw() = 0;
+	virtual void operator()() = 0;
 };
 
 #endif

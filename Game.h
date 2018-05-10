@@ -10,11 +10,13 @@ using namespace std;
 class Game
 {
 	Field* field;
-	map <Event, Handler*> actions;				
+	map<int, map <Event, Handler*>* > actions;				
 
 public:
-	Game(Field* field,map <Event, Handler*> actions);
+	Game(Field* fieldd, map<int, map <Event, Handler*>* > act);
 	void Play();
+	int Select();
+	void action(Event a);
 };
 
 #endif

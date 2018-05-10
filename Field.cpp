@@ -27,7 +27,7 @@ void Field :: Draw()
 	
 }
 
-void Field::Current(int pnumb)
+void Field::Current(pageNumber)
 {
-
+	pageID = pageNumber;
 }
