@@ -4,6 +4,7 @@
 #include "Handler.h"
 #include <map>
 #include <iostream>
+#include "Event.h"
 
 using namespace std;
 
@@ -11,11 +12,11 @@ class Game
 {
 	Field* field;
 	map<int, map <Event, Handler*>* > actions;				
-
+	int choose;
 public:
-	Game(Field* fieldd, map<int, map <Event, Handler*>* > act);
+	Game(Field* field, map<int, map <Event, Handler*>* > actions);
 	void Play();
-	int Select();
+	Event Select();
 	void action(Event a);
 };
 

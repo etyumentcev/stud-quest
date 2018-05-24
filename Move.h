@@ -12,6 +12,7 @@ class Move:public Handler
 	Field* field;
 
 public:
+	Move(int pageNumber,Field *field);//Конструктор с полями,
 	virtual void operator () ();
 };
 

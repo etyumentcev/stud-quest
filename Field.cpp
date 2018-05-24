@@ -27,7 +27,12 @@ void Field :: Draw()
 	
 }
 
-void Field::Current(pageNumber)
+void Field::Current(int pageNumber)
 {
 	pageID = pageNumber;
+}
+
+int Field::Current() const
+{
+	return pageID;
 }

@@ -15,7 +15,7 @@ class Field : public BasisDraw
 	int pageID;
 	string Name;
 	int choose;
-	
+	int pageNumber;
 	
 
 public:
@@ -24,7 +24,7 @@ public:
 
 	virtual void Draw();
 	void Current(int pnumb);
-	int Current();
+	int Current() const;
 	
 };
 

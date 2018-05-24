@@ -8,7 +8,10 @@ Game::Game(Field* fieldd, map<int, map <Event, Handler*>* > act) :field(fieldd),
 
 Event Game::Select()
 {
-	return Event (0);
+	cin >> choose;
+	Event a(choose);
+	
+	return a ;
 }
 
 void Game::action(Event a)
@@ -24,7 +27,6 @@ void Game::Play()
 	while (true)
 	{
 		field->Draw();
-		Event Step = Select();//для обработки
-		action(Step);//сам переход
+		action(Select());//сам переход
 	}
 }
